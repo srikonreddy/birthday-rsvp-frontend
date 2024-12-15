@@ -1,0 +1,18 @@
+.guest-lists-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guest-list {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#attendingGuestList, #notAttendingGuestList {
+  list-style-type: decimal;
+  padding-left: 0; /* Remove padding from the list */
+}
+
+#attendingGuestList li, #notAttendingGuestList li {
+  margin-left: 20px; /* Adjust this value to control the space between numbers and names */
+}
