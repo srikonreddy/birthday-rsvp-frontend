@@ -14,13 +14,13 @@ const Countdown = () => {
       const minutes = Math.floor((diff % (1000 * 60)) / (1000 * 60));
       const seconds = Math.floor((diff % 1000) / 1000);
 
-      setTimeLeft(`${days}d ${hours}h`);
+      setTimeLeft(`${days} days & ${hours} hours`);
     }, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
-  return <p id="countdown">{timeLeft} Days until the weekend away</p>;
+  return <p id="countdown">{timeLeft} until the weekend away</p>;
 };
 
 export default Countdown;
